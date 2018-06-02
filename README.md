@@ -15,7 +15,7 @@ LessPacker({
 })
 ```
 
-### Attribute
+## Attribute
 
 | name | intro | type | default |
 | -- | -- | -- | -- |
@@ -25,7 +25,7 @@ LessPacker({
 | testOutput | test output path while dev | string | dest/index.css |
 | testFile | test entry path while dev | string | src/test.less |
 | watchDir | watch dir while dev | string | src/ |
-| format | extra output file type | array | [sass, stylus] |
+| format | extra output file type | array | ['sass', 'stylus'] |
 | charset | charset of file | string | utf8 |
 
 ## License
