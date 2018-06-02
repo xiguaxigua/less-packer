@@ -18,12 +18,15 @@ const DEFAULT_OPTIONS = {
   charset: 'utf8'
 }
 
-function read (pathName, charset, target = __dirname) {
-  return fs.readFileSync(path.resolve(target, pathName), charset)
+function read (pathName, charset, target) {
+  let pathReal = target
+    ? path.resolve(target, pathName)
+    : path.resolve(pathName)
+  return fs.readFileSync(pathReal, charset)
 }
 
 function resolve (pathName) {
-  return path.resolve(__dirname, pathName)
+  return path.resolve(pathName)
 }
 
 function write (pathName, content, charset) {
@@ -92,7 +95,6 @@ module.exports = function LessPacker (options) {
     format,
     charset
   } = Object.assign({}, DEFAULT_OPTIONS, options)
-
   if (dev) {
     console.log('[Less Packer] is watching you...')
     watch.watchTree(resolve(watchDir), function () {
