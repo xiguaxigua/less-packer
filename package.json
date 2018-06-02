@@ -1,6 +1,6 @@
 {
   "name": "less-packer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "combine multiple less file to a bundle file and output for sass and stylus file",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/xiguaxigua/less-packer.git"
   },
-  "keywords": ["less", "pack"],
+  "keywords": [
+    "less",
+    "pack"
+  ],
   "author": "xiguaxigua",
   "license": "ISC",
   "bugs": {
