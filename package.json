@@ -1,0 +1,35 @@
+{
+  "name": "less-packer",
+  "version": "0.0.1",
+  "description": "combine multiple less file to a bundle file and output for sass and stylus file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiguaxigua/less-packer.git"
+  },
+  "keywords": ["less", "pack"],
+  "author": "xiguaxigua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiguaxigua/less-packer/issues"
+  },
+  "homepage": "https://github.com/xiguaxigua/less-packer#readme",
+  "dependencies": {
+    "less": "^3.0.4",
+    "less-to-stylus": "^0.1.0",
+    "less2sass": "^1.0.3",
+    "mkdirp": "^0.5.1",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
